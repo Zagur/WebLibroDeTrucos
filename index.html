@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic 1.1 by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html  lang="es">
+	<head>
+		<title>Libro de Trucos GNU/Linux - PortalLinux.es</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="Libro de Trucos para GNU/Linux" content="" />
+		<meta name="keywords" content="Linux, Portallinux, Libro de trucos, OpenSUSE, Red Hat, Fedora, Ubuntu, Debian, Arch Linux, Vi, Nano, EMACS" />
+		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet" type="text/css" />
+
+		<!-- FONTS -->
+		<link href='http://fonts.googleapis.com/css?family=Signika+Negative&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700' rel='stylesheet' type='text/css'>
+
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+
+		<script src="lib/jquery-2.0.3.min.js"></script>
+		<script src="source/jquery.swipebox.js"></script>
+		<link rel="stylesheet" href="source/swipebox.css">
+
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-n1.css" />
+			
+		</noscript>
+
+		<script type="text/javascript">
+			jQuery(function($) {
+			$(".swipebox").swipebox();
+			});
+		</script>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-46753903-1', 'portallinux.es');
+			ga('send', 'pageview');
+		</script>
+
+		<script type="text/javascript">
+			$(document).on("ready",function(){
+			$(".irintro").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#introduccion").offset().top  }, 1500 );
+				});
+			});
+
+			$(document).on("ready",function(){
+			$(".irsobre").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#sobre").offset().top  }, 2000 );
+				});
+			});
+
+			$(document).on("ready",function(){
+			$(".irversiones").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#versiones").offset().top  }, 2000 );
+				});
+			});
+
+			$(document).on("ready",function(){
+			$(".irdescargas").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#descargas").offset().top  }, 2000 );
+				});
+			});
+
+			$(document).on("ready",function(){
+			$(".irusuarios").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#usuarios").offset().top  }, 2000 );
+				});
+			});
+
+			$(document).on("ready",function(){
+			$(".irfooter").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#footer").offset().top  }, 2000 );
+				});
+			});
+
+			$(document).on("ready",function(){
+			$(".top").on("click", function(){
+			$("html,body").animate({ scrollTop : $("#header-wrapper").offset().top  }, 2000 );
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			
+		</script>
+
+	</head>
+	<body class="no-sidebar">
+
+		<!-- Header Wrapper -->
+			<div id="header-wrapper">
+				<a href="http://www.portallinux.es"><img class="titulo" src="images/logo/TItuloPortallInuxAlargado.png" alt="PortalLinux" title="PortalLinux"></a>
+				<!-- Header -->
+					<div id="header" class="container">
+						
+						<!-- Logo -->
+							<h1 id="logo" class="irintroduccion"><a href="#introduccion">Libro de Trucos</a></h1>
+						
+						<!-- Nav -->
+							<nav id="nav">
+								<ul>
+									<li class="irintro"><a href="#introduccion">Inicio</a></li>
+									<li class="irsobre"><a href="#sobre">¿De qué trata?</a></li>
+									<li class="irversiones"><a href="#versiones">Versiones</a></li>
+									<li class="break irdescargas"><a href="#descargas">Descargas</a>
+									<li class="irusuarios"><a href="#usuarios">Usuarios</a></li>
+									<li class="irfooter"><a href="#footer">Contacto</a></li>
+								</ul>
+							</nav>
+
+					</div>
+
+			</div>
+
+		<!-- Main Wrapper -->
+			<div class="wrapper">
+
+				<div class="container">
+					<div class="row" id="main">
+						<div class="12u">
+					
+							<!-- Content -->
+								<article id="content">
+									<img class="full image" src="images/svg/portada.svg" alt="Imagen de portada" title="Libro de Trucos para GNU/Linux" />
+									<h2 class="tituloprincipal">Libro de Trucos para GNU/Linux</h2>
+									<br />
+									<header>
+										<h3 id="introduccion" class="seccion">Introducción</h3>
+										<p>Todo empieza en una cena de colegas, risas y más risas y bocadillos gigantes y baratos. Hablando con un amigo, me enseña algo que me dio una idea genial. Era un librito con acordes para el Ukelele. Al ver el libro dije “¿Y si uso el mismo sistema para poner comandos de GNU/Linux?” Odio las manualidades. Y hacer cubos con los comandos de GNU/Linux era algo que hice 3 veces pero cada vez ha ido quedando peor.  Así que, cansado de tener que montar cubos  decidí ponerme manos a la obra con Inkscape y crear un “Libro de Trucos” para GNU/Linux.</p>
+									</header>
+									
+									<h3 class="seccion" id="sobre">Sobre "Libros de Trucos"</h3>
+									<p>Los famosos cubos, que todos hemos montado alguna vez, había muy poco espacio y acabamos con comandos muy simples y siempre nos faltaba alguno para hacer algo y teníamos que buscar por Internet en ayuda de Saint Google. Así que crear un libro de 6 páginas permite tener más comandos y comentarios necesarios para entender algunos comandos.
+
+									Realmente hay tanto espacio que me he permetido el lujo de añadir un mini tutorial de como recuperar en grup en 4 sencillos pasos! Ya que todo el mundo le ha pasado, si no entiendes de tema, casi siempre rompes el grub sin darte cuenta (y yo soy el primero… por suerte se recuperarlo facilmente).
+
+									Además, un problema que yo veía en los cubos, es que no sabía donde meterlos y/o guardarlos y se me acababan achafando un poco o despegando (a faltar de cartulina algunos los hacía con doble papel), pero estos problemas ya no existen con “Libro de Trucos” ya que es un librito muy pequeño de 10cm de ancho y 14cm de alto. Además esto permite que se pueda guardar y/o transportar fácilmente en un bolsillo, en una carpeta, entre las hojas de un libro, en el cajón, en el maletero…</p>
+
+									<h3 id="versiones" class="seccion">Versiones disponibles</h3>
+
+									<p>Hasta ahora había pensado hacer 3 versiones (Debian, Red Hat y OpenSUSE) pero para un futuro he pensado hacer “Libros de Trucos” de otras distribuciones importantes (SlackWare, ArchLinux, Ubuntu (aunque el libro de Debian ya vale..); incluso de algunos programas como VIM, Emacs…). Básicamente las diferencias entre libros de Debian/RedHat/OpenSUSE son los comandos de instalación de paquetes ya que unos usan paquetería .DEB y otros .RPM o unos usan apt-get/aptitude y otros yum/zypper/yast.</p>
+
+									<h3 id="muestra" class="seccion">Imágenes de muestra</h3>
+									<!-- LIBROS DE DEBIAN -->
+									<a href="images/Debian/LibroTrucos1.jpg" class="swipebox"><img class="smallimg" src="images/Debian/thumbnail/thumb.Librodetrucos1.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 1 de 5" /></a>
+
+									<a href="images/Debian/LibroTrucos2.jpg" class="swipebox"><img class="smallimg" src="images/Debian/thumbnail/thumb.Librodetrucos2.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 2 de 5" /></a>
+
+									<a href="images/Debian/LibroTrucos3.jpg" class="swipebox"><img class="smallimg" src="images/Debian/thumbnail/thumb.Librodetrucos3.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 3 de 5" /></a>
+
+									<a href="images/Debian/LibroTrucos4.jpg" class="swipebox"><img class="smallimg" src="images/Debian/thumbnail/thumb.Librodetrucos4.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 4 de 5" /></a>
+
+									<a href="images/Debian/LibroTrucos5.jpg" class="swipebox"><img class="smallimg" src="images/Debian/thumbnail/thumb.Librodetrucos5.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 5 de 5" /></a>
+									<!-- LIBROS DE OPENSUSE -->
+									<a href="images/OpenSUSE/LibroTrucos1.jpg" class="swipebox"><img class="smallimg" src="images/OpenSUSE/thumbnail/thumb.librotrucos1.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 1 de 5" /></a>
+
+									<a href="images/OpenSUSE/LibroTrucos2.jpg" class="swipebox"><img class="smallimg" src="images/OpenSUSE/thumbnail/thumb.librotrucos2.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 2 de 5" /></a>
+
+									<a href="images/OpenSUSE/LibroTrucos3.jpg" class="swipebox"><img class="smallimg" src="images/OpenSUSE/thumbnail/thumb.librotrucos3.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 3 de 5" /></a>
+
+									<a href="images/OpenSUSE/LibroTrucos4.jpg" class="swipebox"><img class="smallimg" src="images/OpenSUSE/thumbnail/thumb.librotrucos4.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 4 de 5" /></a>
+
+									<a href="images/OpenSUSE/LibroTrucos5.jpg" class="swipebox"><img class="smallimg" src="images/OpenSUSE/thumbnail/thumb.librotrucos5.jpg" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR - 5 de 5" /></a>
+
+								</article>
+						</div>
+					</div>
+
+					<div class="row features">
+						<h2 id="descargas" class="descargas">Descargas</h2>
+						<section class="4u feature">
+							<div class="image-wrapper first">
+								<a href="images/png/LibroDeTrucos_DEBIAN.png" class="image full swipebox" title="Libro de Trucos Debian - SOLO MUESTRA, NO IMPRIMIR -"><img src="images/logo/debian.png" alt="Imagen de muestra" title="Libro de Trucos Debian - SOLO MUESTRA, NO IMPRIMIR -" /></a>
+							</div>
+							<header>
+								<h3 class="descargas">Distribuciones basadas en <span class="debian">Debian</span> GNU/Linux</h3>
+							</header>
+								<ul class="actions">
+									<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/PDF/LibroDeTrucos_DEBIAN.pdf" class="buttondeb" target="_blank">Descargar libro <span class="debian">Debian</span></a></li>
+								</ul>
+						</section>
+
+						<section class="4u feature">
+							<div class="image-wrapper">
+								<a href="images/png/LibroDeTrucos_OPENSUSE.png" class="image full swipebox" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR -"><img src="images/logo/opensuse.png" alt="Imagen de muestra" title="Libro de Trucos OpenSUSE - SOLO MUESTRA, NO IMPRIMIR -" /></a>
+							</div>
+							<header>
+								<h3 class="descargas">Distribuciones basadas en <span class="opensuse">OpenSUSE</span> GNU/Linux</h3>
+							</header>
+								<ul class="actions">
+									<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/PDF/LibroDeTrucos_OPENSUSE.pdf" class="buttonsuse" target="_blank">Descargar libro <span class="opensuse">OpenSUSE</span></a></li>
+								</ul>
+						</section>
+
+						<section class="4u feature">
+							<div class="image-wrapper">
+								<a href="images/png/LibroDeTrucos_REDHAT.png" class="image full swipebox" title="Libro de Trucos Red Hat - SOLO MUESTRA, NO IMPRIMIR -"><img src="images/logo/redhat.png" alt="Imagen de muestra" title="Libro de Trucos Red Hat - SOLO MUESTRA, NO IMPRIMIR -" /></a>
+							</div>
+							<header>
+								<h3 class="descargas">Distribuciones basadas en <span class="redhat">Red Hat</span> GNU/Linux</h3>
+							</header>
+							<ul class="actions">
+								<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/PDF/LibroDeTrucos_REDHAT.pdf" class="buttonhat" target="_blank">Descargar libro <span class="redhat">Red Hat</span></a></li>
+							</ul>
+						</section>
+
+						<section class="4u feature">
+							<div class="image-wrapper">
+								<a href="images/png/LibroDeTrucos_UBUNTU.png" class="image full swipebox" title="Libro de Trucos UBUNTU - SOLO MUESTRA, NO IMPRIMIR -"><img src="images/logo/ubuntu.png" alt="Imagen de muestra" title="Libro de Trucos UBUNTU - SOLO MUESTRA, NO IMPRIMIR -" /></a>
+							</div>
+							<header>
+								<h3 class="descargas">Distribuciones basadas en <span class="ubuntu">Ubuntu</span> GNU/Linux</h3>
+							</header>
+								<ul class="actions">
+									<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/PDF/LibroDeTrucos_UBUNTU.pdf" class="buttonubuntu" target="_blank">Descargar libro <span class="ubuntu">Ubuntu</span></a></li>
+								</ul>
+						</section>
+
+						<section class="4u feature">
+							<div class="image-wrapper">
+								<a href="images/png/LibroDeTrucos_FEDORA.png" class="image full swipebox" title="Libro de Trucos FEDORA - SOLO MUESTRA, NO IMPRIMIR -"><img src="images/logo/fedora.png" alt="Imagen de muestra" title="Libro de Trucos FEDORA - SOLO MUESTRA, NO IMPRIMIR -" /></a>
+							</div>
+							<header>
+								<h3 class="descargas">Distribuciones basadas en <span class="fedora">Fedora</span> GNU/Linux</h3>
+							</header>
+								<ul class="actions">
+									<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/PDF/LibroDeTrucos_FEDORA.pdf" class="buttonfd" target="_blank">Descargar libro <span class="fedora">Fedora</span></a></li>
+								</ul>
+						</section>
+
+						<section class="4u feature">
+							<div class="image-wrapper">
+								<a href="images/png/LibroDeTrucos_ARCHLINUX.png" class="image full swipebox" title="Libro de Trucos ARCH LINUX - SOLO MUESTRA, NO IMPRIMIR -"><img src="images/logo/archlinux.png" alt="Imagen de muestra" title="Libro de Trucos ARCH LINUX - SOLO MUESTRA, NO IMPRIMIR -" /></a>
+							</div>
+							<header>
+								<h3 class="descargas">Distribuciones basadas en <span class="archlinux">Arch Linux</span> GNU/Linux</h3>
+							</header>
+								<ul class="actions">
+									<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/PDF/LibroDeTrucos_ARCHLINUX.pdf" class="buttonarch" target="_blank">Descargar libro <span class="archlinux">ArchLinux</span></a></li>
+								</ul>
+						</section>
+
+						<div class="montaje 12u">
+							<h3 class="seccion">Como montar tu Libro de Trucos</h3>
+							<p>Había pensado hacer un vídeo, pero bueno ya que ya hay uno en la red pues lo vamos a usar y de paso hacemos publicidad ya que he sacado la idea de Ukecosas (tienda de Ukeleles en españa). El “Libro de Trucos” se tiene que plegar de la misma forma.</p>
+
+							<p class="video">
+								<object type="application/x-shockwave-flash" style="width:75%;height:360px" data="http://www.youtube.com/v/Vjf1tv1W62o?rel=0">
+									Si puedes leer esto, significa que tu navegador no soporta Flash.
+									<param name="movie" value="http://www.youtube.com/v/Vjf1tv1W62o?rel=0" />
+								</object>
+							</p>
+
+							<h3 class="seccion">Licencia de la obra: Cultura Libre</h3>
+							<p>Se permite la copia de “Libro de Trucos” en cualquier formato, ya sea sin ánimo de lucro o con fines comerciales, siempre y que cuando no se modifique su contenido, se respete su autoría y la nota en el fichero fuente se mantenga. Gracias por respetar mi trabajo.</p>
+
+							<p>Desde aquí puedes descargar la plantilla para crear tus propios libros:</p>
+
+							<center>
+							<h3 class="descargas">Plantilla Libro de Trucos para GNU/Linux</h3>
+
+							<ul class="actions">
+								<li><a href="http://www.portallinux.es/wp-content/descargas/LibroDeTrucos/SVG/LibroDeTrucos_PLANTILLA.svg" class="buttonfd" target="_blank">Descargar plantilla Libro De Trucos GNU/Linux</a></li>
+							</ul>
+							</center>
+
+							<p>Si además quieres colaborar puedes enviarme tu Libro de Trucos creado por ti para poder añadirlo en esta web. Por supuesto, <strong>respetando la auditoría</strong> del nuevo Libro de Trucos.</p>
+
+							<p class="licencia"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/StillImage" property="dct:title" rel="dct:type">Libro de Trucos</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="www.portallinux.es/librodetrucos" property="cc:attributionName" rel="cc:attributionURL">Jesús Camacho</a> se distribuye bajo una <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Atribución-CompartirIgual 4.0 Internacional</a>.</p>
+
+							<h3 class="seccion">Erratas</h3>
+							<p>Soy humano, y como tal cometo errores. Es muy posible que haya algún que otro error en algún libro. Algún comando mal escrito, alguno que no funcione… Me los he mirado 100 veces y he ido corrigiendo varios errores que iba encontrando, pero como dicen “4 ojos ven más que dos” así que si encontráis un error me gustaría que se me informara para que pueda corregir el error. De momento el “Libro de Trucos” está en una versión de desarrollo y mejora, iré arreglando errores y actualizando los ficheros.</p>
+						</div>
+					</div>
+
+					<!-- USUARIOS -->
+
+					<div id="usuarios">
+
+						<h3 class="seccion">Usuarios y Cubo de Trucos</h3>
+
+						<div class="esquerra">
+							<blockquote class="twitter-tweet" lang="ca"><p>Librito de trucos de <a href="https://twitter.com/search?q=%23openSUSE&amp;src=hash">#openSUSE</a> ftw! <a href="http://t.co/KwiQDGrXJo">pic.twitter.com/KwiQDGrXJo</a> aqui tienes cómo hacerlo <a href="http://t.co/nccJQVMD8z">http://t.co/nccJQVMD8z</a> via <a href="https://twitter.com/Zagurito">@Zagurito</a></p>&mdash; victorhck (@victorhck1) <a href="https://twitter.com/victorhck1/statuses/416516969534201856">December 27, 2013</a></blockquote>
+							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+
+						<div class="dreta">
+							<blockquote class="twitter-tweet" lang="ca"><p>mini <a href="https://twitter.com/search?q=%23Libro&amp;src=hash">#Libro</a> de <a href="https://twitter.com/search?q=%23trucos&amp;src=hash">#trucos</a> de <a href="https://twitter.com/search?q=%23Linux&amp;src=hash">#Linux</a> <a href="http://t.co/HcHJCpVUaH">http://t.co/HcHJCpVUaH</a> <a href="https://twitter.com/search?q=%23yatengoelmio&amp;src=hash">#yatengoelmio</a> <a href="http://t.co/VtSBCNJiAn">pic.twitter.com/VtSBCNJiAn</a></p>&mdash; Luis García (@tionazo) <a href="https://twitter.com/tionazo/statuses/387825186294484992">October 9, 2013</a></blockquote>
+							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+
+						<div class="esquerra">
+							<blockquote class="twitter-tweet" lang="ca"><p><a href="https://twitter.com/Zagurito">@Zagurito</a> una pequeña muestra de lo que nos espera en el próximo <a href="https://twitter.com/search?q=%23Flisol&amp;src=hash">#Flisol</a> <a href="https://twitter.com/search?q=%23Loja&amp;src=hash">#Loja</a> 2014 <a href="http://t.co/wWNvczBqvW">pic.twitter.com/wWNvczBqvW</a></p>&mdash; Diego Saavedra (@Statick_linux) <a href="https://twitter.com/Statick_linux/statuses/432978916148785152">February 10, 2014</a></blockquote>
+							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+
+						<div class="dreta">
+							<blockquote class="twitter-tweet" lang="ca"><p><a href="https://twitter.com/search?q=%23librodetrucos&amp;src=hash">#librodetrucos</a> <a href="https://twitter.com/search?q=%23fedora&amp;src=hash">#fedora</a> <a href="https://twitter.com/search?q=%23thanks&amp;src=hash">#thanks</a> <a href="https://twitter.com/search?q=%23portallinux&amp;src=hash">#portallinux</a>.es <a href="http://t.co/sXCIM7LR1q">http://t.co/sXCIM7LR1q</a></p>&mdash; Juank (@juan77_sonic) <a href="https://twitter.com/juan77_sonic/statuses/408066345981739008">December 4, 2013</a></blockquote>
+							<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+						</div>
+					</div>
+
+					<!-- BACK TO TOP -->
+
+					<div class="top">
+						<a href="#header-wrapper">Ir al inicio</a>
+					</div>
+				</div>
+			</div>			
+
+		<!-- Footer Wrapper -->
+			<div id="footer-wrapper">
+
+				<!-- Footer -->
+					<div id="footer" class="container">
+						<header class="major">
+							<h2>¿Tienes dudas? Contacta conmigo!</h2>
+							<span>Si tienes alguna sugerencia o quieres contactar conmigo desde alguna red social.</span>
+						</header>
+						<div class="row">
+							<section class="6u">
+								
+							</section>
+							<section class="6u">
+								<div class="row no-collapse-1">
+									<ul class="divided icons 6u">
+										<li class="fa fa-twitter"><a href="http://www.twitter.com/zagurito" target="_ablank"><span class="extra">twitter.com/</span>Twitter</a></li>
+										<li class="fa fa-facebook"><a href="https://www.facebook.com/pages/PortalLinux-Antiguo-Ubuntun%C3%ADzate/165534006796330" target="_ablank"><span class="extra">facebook.com/</span>Facebook</a></li>
+										<li class="fa fa-linux"><a href="http://www.portallinux.es" target="_ablank"><span class="extra">PortalLinux.es</span>PortalLinux</a></li>
+									</ul>
+									<ul class="divided icons 6u">
+										<li class="fa fa-google-plus"><a href="https://plus.google.com/u/0/b/107657541985036052234/107657541985036052234/posts" target="_ablank"><span class="extra">plus.google.es</span>Google+</a></li>
+										<li class="fa fa-credit-card"><a href="https://www.paypal.com/es/cgi-bin/webscr?cmd=_flow&SESSION=NPLB-j8ykUlws4AaWAV46_fC4hcHWgS80bKg2TfOk8Ri-7QrhjPh_a0gkVu&dispatch=5885d80a13c0db1f8e263663d3faee8def8934b92a630e40b7fef61ab7e9fe63" target="_ablank"><span class="extra">paypal.com</span>Donar</a></li>
+									</ul>
+								</div>
+							</section>
+						</div>
+					</div>
+
+				<!-- Copyright -->
+					<div id="copyright" class="container">
+						<ul class="menu">
+							<li class="copyleft"><img src="images/copyleft.png" alt="CopyLeft" title="CopyLeft" width="13px"> PortalLinux | <script>												var f=new Date(); document.write(f.getFullYear());</script>
+							</li>
+							<li class="copyleft">Diseñado por: <a href="http://html5up.net/">HTML5 UP</a></li>
+							<li class="copyleft">Modificado por: <a href="http://www.twitter.com/zagurito">Jesús Camacho</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+	</body>
+</html>
